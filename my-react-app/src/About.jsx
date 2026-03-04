@@ -4,12 +4,12 @@ const  products=['Fresh eggs','Ex layers','Hybrid chicken','Honey','Fish','Dried
 
 function About() {
   return (
-    <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-10" id="#about">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10" id="#about">
       <section className="rounded overflow-hidden">
         <div className="relative bg-cover bg-center rounded" style={{ backgroundImage: "url('/images/improvedh.jpg')" }}>
           <div className="frost p-8 text-center">
             <h2 className="text-3xl md:text-4xl font-extrabold text-amber-300">About Our farm</h2>
-            <p className="text-white font-semibold mt-2">We are a family owned farm built on hard work, trust, and a deep respect for nature. What started in 2020 as a simple idea has grown into a thriving, community focused farm that we are proud to call our own.
+            <p className="text-white font-semibold mt-2 bg-gray-100">We are a family owned farm built on hard work, trust, and a deep respect for nature. What started in 2020 as a simple idea has grown into a thriving, community focused farm that we are proud to call our own.
 From the beginning, our goal was clear: produce healthy food in a way that is responsible, sustainable, and beneficial to the people around us. Every decision we make reflects that commitment.</p>
           </div>
         </div>
@@ -17,14 +17,14 @@ From the beginning, our goal was clear: produce healthy food in a way that is re
 
       <section className="mt-8 max-w-4xl mx-auto">
         <h2 className="text-2xl md:text-3xl font-extrabold text-amber-900">Rooted in Sustainability</h2>
-        <p className="mt-4 text-gray-700 leading-relaxed">
+        <p className="mt-4 text-gray-700 leading-relaxed bg-gray-100">
          We believe farming should work with nature, not against it. That is why we invested in solar energy to power our operations. Clean energy keeps our farm running efficiently while reducing our environmental footprint.
           We also use Black Soldier Flies as part of our waste management system. These remarkable insects help us convert organic waste into valuable protein and nutrient rich byproducts. Instead of waste piling up, it becomes part of a natural cycle that supports our poultry and fish production. Nothing goes to waste. Everything has purpose.
         </p>
       </section>
        <section className="mt-8 max-w-4xl mx-auto">
         <h2 className="text-2xl md:text-3xl font-extrabold text-amber-900">Serving our local community</h2>
-        <p className="mt-4 text-gray-700 leading-relaxed">
+        <p className="mt-4 text-gray-700 leading-relaxed bg-gray-100">
         Our farm proudly supplies fresh, high quality products to the local community. We value the relationships we have built with our customers over the years. Many of them have supported us from the beginning, and we do not take that trust lightly.
         When you buy from us, you are not just purchasing food. You are supporting a local family business that believes in transparency, quality, and care.
         </p>
