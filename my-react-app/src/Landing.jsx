@@ -29,7 +29,7 @@ function Landing() {
           At Grannada Farm we are committed to sustainable farming practices. Our family-run operation focuses on ethical raising of poultry, fish, and bees, while innovating with black soldier fly production for eco-friendly protein and waste management. We turn chicken droppings into valuable fertilizer to support local farms.
         </p>
         <div className='flex justify-center'>
-          <img src="images/granfarm.jpg" alt="layers unit" className='rounded-lg shadow-md max-w-full' />
+          <img src="images/granfarm.jpg" alt="layers unit" className='rounded-lg shadow-md max-w-full'loading='lazy' />
         </div>
       </section>
       <section className='mt-16 px-4 sm:px-6 lg:px-8'>
@@ -37,17 +37,17 @@ function Landing() {
         <h2 className='font-extrabold text-4xl text-amber-900 text-center'>Why choose us</h2>
         <section className="mt-8 grid gap-6 md:grid-cols-3">
         <div className="bg-white p-8 rounded-lg text-center shadow hover:shadow-xl transition">
-          <img src="/images/fresh.png" alt="fresh" className='mx-auto mb-4 w-20 h-20' />
+          <img src="/images/fresh.png" alt="fresh" className='mx-auto mb-4 w-20 h-20' loading='lazy'/>
           <h3 className="text-amber-800 font-bold mb-2">Freshness</h3>
           <p className='text-gray-600'>Directly from farm to you. No middlemen</p>
         </div>
         <div className="bg-white p-8 rounded-lg text-center shadow hover:shadow-xl transition">
-          <img src='/images/chickenvga.png' alt='chicken' className='mx-auto mb-4 w-20 h-20'></img>
+          <img src='/images/chickenvga.png' alt='chicken' className='mx-auto mb-4 w-20 h-20' loading='lazy'></img>
           <h3 className="text-amber-800 font-bold mb-2">Variety</h3>
           <p className='text-gray-600'>One-stop shop for poultry, fish, honey and more</p>
         </div>
         <div className="bg-white p-8 rounded-lg text-center shadow hover:shadow-xl transition">
-          <img src="/images/feedback.png" alt="feedback" className='mx-auto mb-4 w-20 h-20'/>
+          <img src="/images/feedback.png" alt="feedback" className='mx-auto mb-4 w-20 h-20' loading='lazy' />
           <h3 className="text-amber-800 font-bold mb-2">100+ Customers</h3>
           <p className='text-gray-600'>Growing demand for our products</p>
         </div>

@@ -110,7 +110,7 @@ const products = [
               <img
                 src={product.image}
                 alt={product.name}
-                className="w-full h-48 object-cover rounded-xl"
+                className="w-full h-48 object-cover rounded-xl" loading="lazy"
               />
               <h2 className="text-xl font-semibold mt-4">
                 {product.name}
