@@ -30,7 +30,7 @@ function Contacts() {
       </header>
 
       <div className="mt-8 flex flex-col md:flex-row md:items-start md:gap-8">
-        <form className="w-full md:w-2/3 bg-white p-6 rounded shadow" onSubmit={handleSubmit} action="grannada.farm@gmail.com" encType="text/plain" method="POST">
+        <form className="w-full md:w-2/3 bg-white p-6 rounded shadow" onSubmit={handleSubmit} action="grannada.enterprise@gmail.com" encType="text/plain" method="POST">
           <div className="grid gap-3">
             <label className="sr-only">Name</label>
             <input

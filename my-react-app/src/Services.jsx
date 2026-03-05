@@ -20,7 +20,7 @@ function Services() {
         <h2 className="text-2xl md:text-3xl font-bold text-amber-900 bg-amber-50 inline-block px-3 py-1 rounded">Our Products </h2>
       </header>
 
-      <p className="mt-6 text-gray-700 max-w-3xl mx-auto text-center leading-relaxed frost2 shadow-xl px-8 py-4">
+      <p className="mt-6 bg-grey-200 text-gray-700 max-w-3xl mx-auto text-center leading-relaxed  shadow-xl px-8 py-4">
        Our products reflect the hard work, care, and commitment that define our farm. Every item we offer is produced with attention to quality, sustainability, and the needs of our local community. From fresh food products to value added farm resources, we ensure that what leaves our farm meets high standards and delivers real value to our customers.
       </p>
 

@@ -19,7 +19,7 @@ function Projects() {
             <div className="mt-8 grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 {projects.map((p) => (
                     <article key={p.title} className="bg-white rounded shadow overflow-hidden flex flex-col">
-                        <img src={p.img} alt={p.title} className="w-full h-44 sm:h-56 object-cover" />
+                        <img src={p.img} alt={p.title} loading="lazy" className="w-full h-44 sm:h-56 object-cover" />
                         <div className="p-4 flex-1 flex flex-col">
                             <h3 className="text-amber-800 font-extrabold mb-2">{p.title}</h3>
                             <p className="text-gray-700 flex-1">{p.text}</p>

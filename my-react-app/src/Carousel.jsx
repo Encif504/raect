@@ -7,7 +7,7 @@ const products = [
   { id: 4, name: "Improved Kienyeji", price: "Ksh 900-1200", image: "/images/improvedh.jpg" },
   { id: 5, name: "Ex-layer", price: "Ksh 600/kg", image: "/images/improved-.jpg" },
   { id: 6, name: "Tilapia", price: "Ksh 400/kg", image: "/images/Tilapia.jpg" },
-  { id: 7, name: "Black Soldier Fly & Products", price: "Dried-1000kg, egg-1000/g, maggots-750", image: "/images/bsf.jpg" },
+  { id: 7, name: "Black Soldier Fly & Products", price: "Dried-1000/kg, egg-1000/g, maggots-750", image: "/images/bsf.jpg" },
   
 ]
 
@@ -95,7 +95,7 @@ const products = [
 
   return (
     <div
-      className="relative w-full overflow-hidden py-10"
+      className="relative w-full overflow-hidden "
       onMouseEnter={stopAutoSlide}
       onMouseLeave={startAutoSlide}
     >
@@ -106,16 +106,16 @@ const products = [
       >
         {extendedProducts.map((product, i) => (
           <div key={i} className="min-w-full flex justify-center">
-            <div className="bg-white shadow-xl rounded-2xl p-6 w-80 text-center">
+            <div className="bg-white shadow-xl rounded-2xl p-6 w-80 text-center dark:bg-gray-500">
               <img
                 src={product.image}
                 alt={product.name}
                 className="w-full h-48 object-cover rounded-xl" loading="lazy"
               />
-              <h2 className="text-xl font-semibold mt-4">
+              <h2 className="text-xl font-semibold mt-4 dark:text-amber-400">
                 {product.name}
               </h2>
-              <p className="text-gray-600 mt-2">
+              <p className="text-gray-600 mt-2 dark:text-amber-800 dark:font-extrabold">
                 {product.price}
               </p>
             </div>
@@ -126,7 +126,7 @@ const products = [
       {/* Controls */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-amber-800 text-white px-4 py-2 rounded-full"
+        className="absolute left-4 top-1/2 -translate-y-1/2 bg-amber-800 text-white px-4 py-2  rounded-full"
       >
         ‹
       </button>
