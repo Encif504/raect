@@ -53,25 +53,25 @@ function Landing() {
         </div>
       </section>
       </section>
-      <footer className='bg-amber-400 outline-4 outline-solid place-items-center mt-16 rounded-lg py-12 px-8'>
-        <h3 className='text-white text-3xl bg-amber-800 px-6  rounded mb-8 inline-block'>Let's have a talk</h3>
+      <footer className='bg-amber-700 outline-1 outline-solid place-items-center mt-16 rounded-lg py-12 px-8'>
+        <h3 className='text-white text-3xl bg-amber-800 px-6  rounded mb-6 inline-block outline-1 outline-solid outline-white'>Let's have a talk</h3>
          <div className="mt-4 space-y-4 rounded flex flex-col md:flex-row gap-3 justify-between items-center">
 
           
-              <div className="frost rounded px-4 py-2 flex text-amber-400 items-center">
+              <div className="frost rounded px-2 py-2 flex text-amber-400 items-center">
                <hr />
                |
                 <small className="px-4 font-bold text-white text-base">
                   grannada.enterprise@gmail.com</small></div>
                 
-              <div className=" frost rounded px-4 py-2 flex text-amber-400 items-center">
+              <div className=" frost rounded px-3 py-2 flex text-amber-400 items-center">
                |
-                <small className="text-base px-4 font-bold text-white">0740207040</small>
+                <small className="text-base px-3 font-bold text-white">0740207040</small>
 
               </div>
-              <div className="frost rounded px-4 flex py-2 text-yellow-400 items-center">
-                |
-                <small className="px-4 font-bold text-white text-base">Grannada Farm</small></div>
+              <div className="frost rounded px-3 flex py-2 text-yellow-400">
+              
+                <small className="px-3 font-bold text-white text-base grid:w-full">Grannada Farm</small></div>
             </div>
       </footer>
       

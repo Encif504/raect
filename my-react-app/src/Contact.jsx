@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
+import emailjs from '@emailjs/browser';
 import Faq from "./Faq";
 
 function Contacts() {
@@ -9,6 +10,13 @@ function Contacts() {
     subject: "",
     message: "",
   });
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState(null); // 'success' or 'error'
+  const formRef = useRef();
+
+  useEffect(() => {
+    emailjs.init('YI1j8K6airy7xAFbH');
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -18,9 +26,27 @@ function Contacts() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form submitted with data:", formData);
+    setLoading(true);
+    setStatus(null);
+
+    try {
+      await emailjs.sendForm('service_87p6upc', 'template_1websmr', formRef.current, 'YI1j8K6airy7xAFbH');
+      setStatus('success');
+      setFormData({
+        name: "",
+        phone: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+    } catch (error) {
+      setStatus('error');
+      console.error('EmailJS error:', error);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -30,7 +56,7 @@ function Contacts() {
       </header>
 
       <div className="mt-8 flex flex-col md:flex-row md:items-start md:gap-8">
-        <form className="w-full md:w-2/3 bg-white p-6 rounded shadow" onSubmit={handleSubmit} action="grannada.enterprise@gmail.com" encType="text/plain" method="POST">
+        <form ref={formRef} className="w-full md:w-2/3 bg-white p-6 rounded shadow" onSubmit={handleSubmit}>
           <div className="grid gap-3">
             <label className="sr-only">Name</label>
             <input
@@ -49,7 +75,7 @@ function Contacts() {
               placeholder="0712345678"
               value={formData.phone}
               onChange={handleChange}
-              required
+             
               className="w-full py-2 rounded px-3 bg-gray-100"
             />
 
@@ -80,7 +106,9 @@ function Contacts() {
               className="w-full py-2 rounded px-3 bg-gray-100 h-32"
             />
 
-            <button type="submit" className="w-max mx-auto px-6 py-2 bg-amber-700 text-white rounded">Send message</button>
+            <button type="submit" disabled={loading} className="w-max mx-auto px-6 py-2 bg-amber-700 text-white rounded disabled:opacity-50">{loading ? 'Sending...' : 'Send message'}</button>
+            {status === 'success' && <p className="text-green-600 text-center mt-4">Message sent successfully!</p>}
+            {status === 'error' && <p className="text-red-600 text-center mt-4">Failed to send message. Please try again.</p>}
           </div>
         </form>
 

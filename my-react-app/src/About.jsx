@@ -57,17 +57,17 @@ From the beginning, our goal was clear: produce healthy food in a way that is re
       </section>
 
       <section className="mt-8 grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        <div className="bg-amber-400 p-6 rounded-lg">
-          <h3 className="text-2xl font-bold text-amber-900 ">Sustainability</h3>
-          <p className=" px-4  py-2 rounded mt-2 text-gray-700 bg-gray-200">We use sustainable farming practices that protect the environment for future generations.</p>
+        <div className="bg-amber-800 p-6 rounded-lg">
+          <h3 className="text-2xl font-bold text-amber-300 ">Sustainability</h3>
+          <p className=" px-4  py-2 rounded mt-2 dark:bg-gray-400 dark:text-black text-gray-700 bg-gray-200">We use sustainable farming practices that protect the environment for future generations.</p>
         </div>
-        <div className="bg-amber-400 p-6 rounded-lg">
-          <h3 className="text-2xl font-bold text-amber-900">Quality</h3>
-          <p className="mt-2 text-gray-700 px-4  py-2 rounded bg-gray-200">Every egg and chicken meets our quality standards before reaching your table.</p>
+        <div className="bg-amber-800 p-6 rounded-lg">
+          <h3 className="text-2xl font-bold text-amber-300">Quality</h3>
+          <p className="mt-2 dark:bg-gray-400  text-gray-700 px-4  py-2 rounded bg-gray-200">Every egg and chicken meets our quality standards before reaching your table.</p>
         </div>
-        <div className="bg-amber-400 p-6 rounded-lg">
-          <h3 className="text-2xl font-bold text-amber-900">Freshness</h3>
-          <p className="mt-2 text-gray-700 px-4  py-2 rounded bg-gray-200">Our products are delivered fresh daily ensuring maximum flavor and nutritional value.</p>
+        <div className="bg-amber-800 p-6 rounded-lg">
+          <h3 className="text-2xl font-bold text-amber-300">Freshness</h3>
+          <p className="mt-2 text-gray-700 px-4 dark:bg-gray-400 dark:text-black  py-2 rounded bg-gray-200">Our products are delivered fresh daily ensuring maximum flavor and nutritional value.</p>
         </div>
          
       </section>

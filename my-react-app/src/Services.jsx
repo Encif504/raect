@@ -20,28 +20,28 @@ function Services() {
         <h2 className="text-2xl md:text-3xl font-bold text-amber-900 bg-amber-50 inline-block px-3 py-1 rounded">Our Products </h2>
       </header>
 
-      <p className="mt-6 bg-grey-200 text-gray-700 max-w-3xl mx-auto text-center leading-relaxed  shadow-xl px-8 py-4">
+      <p className="mt-6 bg-grey-200 text-gray-700 max-w-3xl dark:bg-gray-400 dark:text-black mx-auto text-center leading-relaxed  shadow-xl px-8 py-4">
        Our products reflect the hard work, care, and commitment that define our farm. Every item we offer is produced with attention to quality, sustainability, and the needs of our local community. From fresh food products to value added farm resources, we ensure that what leaves our farm meets high standards and delivers real value to our customers.
       </p>
 
       <section className="mt-8 grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {services.map((s) => (
-          <div key={s.title} className="flex gap-4 bg-white rounded shadow p-4 items-start">
+          <div key={s.title} className="flex gap-4 bg-white dark:bg-gray-400 rounded shadow p-4 items-start">
             <img src={s.img} alt={s.title} loading='lazy' className="w-24 h-24 object-cover rounded" />
             <div>
               <h3 className="text-lg font-extrabold text-amber-900">{s.title}</h3>
-              <div className="text-sm font-semibold text-gray-800">{s.price}</div>
-              <p className="mt-2 text-sm text-gray-600">{s.desc}</p>
+              <div className="text-sm font-semibold text-gray-800 dark:text-white">{s.price}</div>
+              <p className="mt-2 text-sm text-gray-600 dark:text-black">{s.desc}</p>
             </div>
           </div>
         ))}
       </section>
       {/* consultation and tour offer */}
-      <section className="mt-8  from-amber-50 to-amber-100 rounded-lg p-8 flex flex-col md:flex-row items-center gap-6 shadow-lg">
+      <section className="mt-8 dark:bg-gray-400  from-amber-50 to-amber-100 rounded-lg p-8 flex flex-col md:flex-row items-center gap-6 shadow-lg">
         <div className="flex-1 text-center md:text-left">
           <h3 className="text-xl font-bold text-amber-900 mb-2">Looking for expert advice or a visit?</h3>
           <p className="text-gray-700 leading-relaxed">
-            We offer <span className="font-semibold">Black Soldier Fly farming consultation</span> and <span className="font-semibold">guided farm tour visits</span>.
+            We offer <span className="font-semibold dark:bg-amber-600 dark:text-white dark:px-3 dark:rounded">Black Soldier Fly farming consultation</span> and <span className="font-semibold">guided farm tour visits</span>.
             Reach out to us to learn more about sustainable farming or to book a tour of our facilities.
           </p>
         </div>
