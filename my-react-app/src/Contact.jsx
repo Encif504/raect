@@ -56,54 +56,54 @@ function Contacts() {
       </header>
 
       <div className="mt-8 flex flex-col md:flex-row md:items-start md:gap-8">
-        <form ref={formRef} className="w-full md:w-2/3 bg-white p-6 rounded shadow" onSubmit={handleSubmit}>
-          <div className="grid gap-3">
-            <label className="sr-only">Name</label>
+        <form ref={formRef} className="w-full md:w-2/3 bg-white dark:bg-gray-400 p-6 rounded shadow" onSubmit={handleSubmit}>
+          <div className="grid gap-3 dark:text-black">
+            <label className="sr-only ">Name</label>
             <input
               type="text"
               name="name"
-              placeholder="Name"
+              placeholder="Name*"
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full py-2 rounded px-3 bg-gray-100"
+              className="w-full py-2 rounded px-3 bg-gray-100 dark:bg-gray-300"
             />
 
             <input
               type="tel"
               name="phone"
-              placeholder="0712345678"
+              placeholder="Phone(optional)"
               value={formData.phone}
               onChange={handleChange}
              
-              className="w-full py-2 rounded px-3 bg-gray-100"
+              className="w-full py-2 rounded px-3 bg-gray-100 dark:bg-gray-300"
             />
 
             <input
               type="email"
               name="email"
-              placeholder="example@gmail.com"
+              placeholder="Email*"
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full py-2 rounded px-3 bg-gray-100"
+              className="w-full py-2 rounded px-3 bg-gray-100 dark:bg-gray-300"
             />
 
             <input
               type="text"
               name="subject"
-              placeholder="Subject"
+              placeholder="Subject*"
               value={formData.subject}
               onChange={handleChange}
-              className="w-full py-2 rounded px-3 bg-gray-100"
+              className="w-full py-2 rounded px-3 bg-gray-100 dark:bg-gray-300"
             />
 
             <textarea
               name="message"
-              placeholder="Message"
+              placeholder="Message*"
               value={formData.message}
               onChange={handleChange}
-              className="w-full py-2 rounded px-3 bg-gray-100 h-32"
+              className="w-full py-2 rounded px-3 bg-gray-100 h-32 dark:bg-gray-300"
             />
 
             <button type="submit" disabled={loading} className="w-max mx-auto px-6 py-2 bg-amber-700 text-white rounded disabled:opacity-50">{loading ? 'Sending...' : 'Send message'}</button>
@@ -116,8 +116,8 @@ function Contacts() {
           <div className="bg-yellow-600 p-6 rounded shadow glass outline outline-solid outline-amber-800">
             <h3 className="text-amber-800 bg-amber-300 px-4 rounded font-bold w-fit">Direct Contact Details</h3>
             <div className="mt-4 space-y-2 bg-amber-100 rounded">
-              <div className="rounded px-2 py-1 flex text-white">
-                <img src="/images/email.png" className="size-7 pt-1"></img> <small className="px-3 font-bold text-black pt-1">grannada.farm@gmail.com</small></div>
+              <div className="rounded px-2 py-1 flex text-white overflow-hidden">
+                <img src="/images/email.png" className="size-7 pt-1 shrink-0"></img> <p className="px-2 text-justify text-black pt-1 animate-marquee whitespace-nowrap min-w-[200%]">grannada.enterprise@gmail.com &nbsp; grannada.enterprise@gmail.com</p></div>
               <div className="rounded px-2 py-1 flex text-white">
                 <img src="/images/phone.png" className="size-7 pt-1"></img>
                 <small className="px-3 font-bold text-black pt-1">0740 207040</small>
