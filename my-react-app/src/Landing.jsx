@@ -12,7 +12,7 @@ function Landing() {
           <p className="text-gray-200 mt-4 max-w-2xl mx-auto leading-relaxed">Discover our range of eggs, fish, broilers, ex-layers, honey, dried black soldier flies, maggots, larvae and nutrient-rich chicken droppings.</p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 sm:gap-8 justify-center">
             <Link to="projects" smooth={true} duration={500} className="px-6 py-3 bg-linear-to-r from-amber-600 to-amber-800 text-white rounded-full shadow-lg hover:from-amber-700 hover:to-amber-900 transition">Explore Now →</Link>
-            <Link to="products" smooth={true} duration={500} className="px-6 py-3 bg-white text-amber-800 rounded-full shadow-lg hover:bg-gray-100 transition">View Products →</Link>
+            <Link to="products" smooth={true} duration={500} className="px-6 py-3 bg-white dark:bg-gray-300 text-amber-800 rounded-full shadow-lg hover:bg-gray-100 transition">View Products →</Link>
           </div>
         </div>
       </section>
