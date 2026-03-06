@@ -12,17 +12,17 @@ function Projects() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8" >
             <h2 className="inline-block bg-amber-900 px-4 py-2 rounded font-bold text-white mb-6">Projects</h2>
 
-            <p className="bg-gray-100 text-gray-800 p-4 rounded max-w-4xl mx-auto leading-relaxed">
+            <p className="bg-gray-100 dark:bg-gray-400 dark:text-black text-gray-800 p-4 rounded max-w-4xl mx-auto leading-relaxed">
                Our farm operates through four key projects that work together to create a sustainable and efficient system. Each area supports the other, helping us reduce waste, improve productivity, and serve our local community with quality products
             </p>
 
             <div className="mt-8 grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 {projects.map((p) => (
-                    <article key={p.title} className="bg-white rounded shadow overflow-hidden flex flex-col">
+                    <article key={p.title} className="bg-white dark:bg-gray-400 rounded shadow overflow-hidden flex flex-col">
                         <img src={p.img} alt={p.title} loading="lazy" className="w-full h-44 sm:h-56 object-cover" />
                         <div className="p-4 flex-1 flex flex-col">
                             <h3 className="text-amber-800 font-extrabold mb-2">{p.title}</h3>
-                            <p className="text-gray-700 flex-1">{p.text}</p>
+                            <p className="text-gray-700 flex-1 dark:text-black">{p.text}</p>
                         </div>
                     </article>
                 ))}
