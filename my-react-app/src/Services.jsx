@@ -17,7 +17,7 @@ function Services() {
   return (
     <div className="max-w-screen mx-auto px-4 sm:px-6 lg:px-8 py-10">
       <header className="bg-[url('/images/eggs.png')] bg-cover bg-center rounded p-8 text-center">
-        <h2 className="text-2xl md:text-3xl font-bold text-amber-900 bg-amber-50 inline-block px-3 py-1 rounded">Our Products </h2>
+        <h2 className="text-2xl md:text-3xl font-bold text-amber-300 inline-block px-3 py-1 rounded underline frost">Our Products </h2>
       </header>
 
       <p className="mt-6 bg-grey-200 text-gray-700 max-w-3xl dark:bg-gray-400 dark:text-black mx-auto text-center leading-relaxed  shadow-xl px-8 py-4">
@@ -41,7 +41,7 @@ function Services() {
         <div className="flex-1 text-center md:text-left">
           <h3 className="text-xl font-bold text-amber-900 mb-2">Looking for expert advice or a visit?</h3>
           <p className="text-gray-700 leading-relaxed">
-            We offer <span className="font-semibold dark:bg-amber-600 dark:text-white dark:px-3 dark:rounded">Black Soldier Fly farming consultation</span> and <span className="font-semibold">guided farm tour visits</span>.
+            We offer <span className="font-semibold dark:bg-amber-600 dark:text-white dark:px-3 dark:rounded frost px-3 rounded text-amber-300 pb-0.5">Black Soldier Fly farming consultation</span> and <span className="font-semibold">guided farm tour visits</span>.
             Reach out to us to learn more about sustainable farming or to book a tour of our facilities.
           </p>
         </div>

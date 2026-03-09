@@ -52,7 +52,7 @@ function Contacts() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
       <header className="bg-[url('/images/hens.jpg')] bg-cover bg-center rounded p-8 text-center">
-        <h2 className=" frost text-2xl md:text-3xl font-bold text-white">Contact us</h2>
+        <h2 className="underline frost text-2xl md:text-3xl font-bold text-yellow-300 rounded">Contact us</h2>
       </header>
 
       <div className="mt-8 flex flex-col md:flex-row md:items-start md:gap-8">
@@ -113,19 +113,20 @@ function Contacts() {
         </form>
 
         <aside className="w-full md:w-1/3 mt-6 md:mt-0">
-          <div className="bg-yellow-600 p-6 rounded shadow glass outline outline-solid outline-amber-800">
+          <div className="bg-yellow-600 p-6 rounded shadow glass outline outline-solid">
             <h3 className="text-amber-800 bg-amber-300 px-4 rounded font-bold w-fit">Direct Contact Details</h3>
             <div className="mt-4 space-y-2 bg-amber-100 rounded">
-              <div className="rounded px-2 py-1 flex text-white overflow-hidden">
-                <img src="/images/email.png" className="size-7 pt-1 shrink-0"></img> <p className="px-2 text-justify text-black pt-1 animate-marquee whitespace-nowrap min-w-[200%]">grannada.enterprise@gmail.com &nbsp; grannada.enterprise@gmail.com</p></div>
-              <div className="rounded px-2 py-1 flex text-white">
+              <div className="rounded px-2 py-1 flex md:grid text-white overflow-hidden md:place-items-center bg-amber-50 mt-0.5">
+                <img src="/images/email.png" className="size-7 pt-1 shrink-0"></img> <p className="px-2 text-justify text-black pt-1 tracking-tighter">grannada.enterprise@gmail.com</p></div>
+              <div className="rounded px-2 py-1 flex md:grid md:place-items-center text-white  bg-amber-50">
                 <img src="/images/phone.png" className="size-7 pt-1"></img>
-                <small className="px-3 font-bold text-black pt-1">0740 207040</small>
+                <small className="px-3 font-bold text-black pt-1 tracking-widest">0740 207040</small>
 
               </div>
-              <div className="rounded px-2 py-1 flex text-white">
+              <div className="rounded px-2 py-1 flex md:grid md:place-items-center text-white  bg-amber-50">
                 <img src="/images/facebook.png" alt="facebook" className="size-7" />
-                <small className="px-3 font-bold text-black pt-1">Grannada Farm</small></div>
+                
+                <small className="px-3 font-bold text-black pt-1 tracking-widest">Grannada Farm</small></div>
             </div>
 
             <div className="mt-6 grid place-items-center">
@@ -141,7 +142,7 @@ function Contacts() {
       </div>
 
       <div className="mt-10">
-        <h2 className="font-bold">Frequently Asked Questions</h2>
+        <h2 className=" text-2xl font-bold bg-gray-800 w-fit rounded not-dark:text-white px-4">Frequently Asked Questions</h2>
         <Faq />
       </div>
     </div>
