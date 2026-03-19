@@ -112,15 +112,15 @@ function Contacts() {
           </div>
         </form>
 
-        <aside className="w-full md:w-1/3 mt-6 md:mt-0">
-          <div className="bg-yellow-600 p-6 rounded shadow glass outline outline-solid">
+        <aside className="w-full md:w-1/3 mt-6 md:mt-0 ">
+          <div className="bg-inherit p-6 rounded shadow glass place-items-center">
             <h3 className="text-amber-800 bg-amber-300 px-4 rounded font-bold w-fit">Direct Contact Details</h3>
-            <div className="mt-4 space-y-2 bg-amber-100 rounded">
+            <div className="mt-4 space-y-2  rounded">
               <div className="rounded px-2 py-1 flex md:grid text-white overflow-hidden md:place-items-center bg-amber-50 mt-0.5">
                 <img src="/images/email.png" className="size-7 pt-1 shrink-0"></img> <p className="px-2 text-justify text-amber-900 pt-1 tracking-tighter">grannada.enterprise@gmail.com</p></div>
-              <div className="rounded px-2 py-1 flex md:grid md:place-items-center text-white  bg-amber-50">
-                <img src="/images/phone.png" className="size-7 pt-1"></img>
-                <small className="px-3 font-bold text-amber-900 pt-1 tracking-widest">0740 207040</small>
+              <div className="rounded px-2 md:py-1 sm:pt-3 flex md:grid md:place-items-center   bg-amber-50">
+                <img src="/images/phone.png" className="size-7 py-1 shrink-0"></img>
+                <small className="px-3 font-bold text-amber-900 pt-1 pb-1 tracking-widest">0740 207040</small>
 
               </div>
               <div className="rounded px-2 py-1 flex md:grid md:place-items-center text-white  bg-amber-50">
@@ -131,9 +131,9 @@ function Contacts() {
             </div>
 
             <div className="mt-6 grid place-items-center">
-              <button className="text-white px-4 py-1 outline-1 outline-solid outline-amber-300" onClick={()=>window.open("https://maps.app.goo.gl/v31Y48diWtMPS5ZK8?g_st=aw","_blank")}>Open Location</button>
+              <button className="text-white px-4 py-1 outline-1 outline-solid outline-amber-300 bg-amber-800" onClick={()=>window.open("https://maps.app.goo.gl/v31Y48diWtMPS5ZK8?g_st=aw","_blank")}>Open Location</button>
               
-              <small className="mt-2 font-extralight">Guaranteed response within 24 hrs from Monday-Saturday between 8am-5pm</small>
+              <small className="mt-2 font-extralight bg-gray-200 px-2 rounded">Guaranteed response within 24 hrs from Monday-Saturday between 8am-5pm</small>
             </div>
             <div className="place-items-center mt-2">
               <img src="images/image.jpg" className="w-full max-w-xs rounded mx-auto" alt="contact" />

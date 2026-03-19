@@ -4,11 +4,11 @@ import Carousel from './Carousel'
 
 function Landing() {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 font-sans" id="home" name="home">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6  lg:px-8 py-6 font-sans" id="home" name="home">
       <section className="relative mt-12 bg-cover bg-center rounded-lg overflow-hidden h-96 md:h-128" style={{ backgroundImage: "url('/images/hero.jpg')" }}>
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative z-10 p-12 md:p-20 text-center">
-          <h1 className="text-3xl md:text-5xl font-extrabold text-amber-400 drop-shadow-lg">Fresh, Sustainable Produce Straight from our farm</h1>
+          <h1 className="text-3xl md:text-5xl font-extrabold text-amber-400 drop-shadow-lg transition-all duration-500 ease-in">Fresh, Sustainable Produce Straight from our farm</h1>
           <p className="text-gray-200 mt-4 max-w-2xl mx-auto leading-relaxed">Discover our range of eggs, fish, broilers, ex-layers, honey, dried black soldier flies, maggots, larvae and nutrient-rich chicken droppings.</p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 sm:gap-8 justify-center">
             <Link to="projects" smooth={true} duration={500} className="px-6 py-3 bg-linear-to-r from-amber-600 to-amber-800 text-white rounded-full shadow-lg hover:from-amber-700 hover:to-amber-900 transition">Explore Now →</Link>
