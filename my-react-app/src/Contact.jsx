@@ -117,21 +117,23 @@ function Contacts() {
             <h3 className="text-amber-800 bg-amber-300 px-4 rounded font-bold w-fit">Direct Contact Details</h3>
             <div className="mt-4 space-y-2 bg-amber-100 rounded">
               <div className="rounded px-2 py-1 flex md:grid text-white overflow-hidden md:place-items-center bg-amber-50 mt-0.5">
-                <img src="/images/email.png" className="size-7 pt-1 shrink-0"></img> <p className="px-2 text-justify text-black pt-1 tracking-tighter">grannada.enterprise@gmail.com</p></div>
+                <img src="/images/email.png" className="size-7 pt-1 shrink-0"></img> <p className="px-2 text-justify text-amber-900 pt-1 tracking-tighter">grannada.enterprise@gmail.com</p></div>
               <div className="rounded px-2 py-1 flex md:grid md:place-items-center text-white  bg-amber-50">
                 <img src="/images/phone.png" className="size-7 pt-1"></img>
-                <small className="px-3 font-bold text-black pt-1 tracking-widest">0740 207040</small>
+                <small className="px-3 font-bold text-amber-900 pt-1 tracking-widest">0740 207040</small>
 
               </div>
               <div className="rounded px-2 py-1 flex md:grid md:place-items-center text-white  bg-amber-50">
+                
                 <img src="/images/facebook.png" alt="facebook" className="size-7" />
                 
-                <small className="px-3 font-bold text-black pt-1 tracking-widest">Grannada Farm</small></div>
+                <small className="px-3 font-bold text-amber-900 pt-1 tracking-widest">Grannada Farm</small></div>
             </div>
 
             <div className="mt-6 grid place-items-center">
-              <h4 className="bg-amber-300 inline-block px-3 py-1 rounded">Response Time</h4>
-              <small className="mt-2 font-extralight">Within 24 hrs from Monday-Saturday between 8am-5pm</small>
+              <button className="text-white px-4 py-1 outline-1 outline-solid outline-amber-300" onClick={()=>window.open("https://maps.app.goo.gl/v31Y48diWtMPS5ZK8?g_st=aw","_blank")}>Open Location</button>
+              
+              <small className="mt-2 font-extralight">Guaranteed response within 24 hrs from Monday-Saturday between 8am-5pm</small>
             </div>
             <div className="place-items-center mt-2">
               <img src="images/image.jpg" className="w-full max-w-xs rounded mx-auto" alt="contact" />
