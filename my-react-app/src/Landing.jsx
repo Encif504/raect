@@ -9,23 +9,23 @@ function Landing() {
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative z-10 p-12 md:p-20 text-center">
           <h1 className="text-3xl md:text-5xl font-extrabold text-amber-400 drop-shadow-lg transition-all duration-500 ease-in">Fresh, Sustainable Produce Straight from our farm</h1>
-          <p className="text-gray-200 mt-4 max-w-2xl mx-auto leading-relaxed">Discover our range of eggs, fish, broilers, ex-layers, honey, dried black soldier flies, maggots, larvae and nutrient-rich chicken droppings.</p>
+          <p className="text-gray-200 mt-4 max-w-2xl mx-auto leading-relaxed text-2xl">Discover our range of eggs, fish, broilers, ex-layers, honey, dried black soldier flies, maggots, larvae and nutrient-rich chicken droppings.</p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 sm:gap-8 justify-center">
-            <Link to="projects" smooth={true} duration={500} className="px-6 py-3 bg-linear-to-r from-amber-600 to-amber-800 text-white rounded-full shadow-lg hover:from-amber-700 hover:to-amber-900 transition">Explore Now →</Link>
-            <Link to="products" smooth={true} duration={500} className="px-6 py-3 bg-white dark:bg-gray-300 text-amber-800 rounded-full shadow-lg hover:bg-gray-100 transition">View Products →</Link>
+            <Link to="projects" smooth={true} duration={500} className="px-6 py-3  text-yellow-400 font-bold rounded shadow-lg hover:from-amber-700 outline-1 outline-solid outline-amber-50 hover:to-amber-900 transition">Explore Now →</Link>
+            <Link to="products" smooth={true} duration={500} className="px-6 py-3 bg-white dark:bg-gray-300 text-amber-800 rounded-sm shadow-lg hover:bg-gray-100 transition">View Products →</Link>
           </div>
         </div>
       </section>
 
      <div className='place-items-center w-full mt-16 px-4 sm:px-6 lg:px-8'>
-      <h2 className='text-4xl font-extrabold text-amber-900 mb-8 dark:text-amber-400'>Our Products</h2>
+      <h2 className='text-3xl font-extrabold text-amber-900 mb-8 dark:text-amber-400'>Our Products</h2>
       <Carousel />
-      <Link to="products" smooth={true} duration={500} className="mt-6 inline-block px-6 py-3 bg-amber-800 text-white rounded-full shadow hover:bg-amber-900 transition">Compare prices →</Link>
+      <Link to="products" smooth={true} duration={500} className="mt-6 inline-block px-6 py-3 bg-amber-800 text-white rounded-md shadow hover:bg-amber-900 transition">Compare prices →</Link>
      </div>
      
      
-      <section className='grid md:flex mt-16 gap-8 px-4 sm:px-6 py-6 rounded-lg bg-white shadow-lg dark:bg-gray-400'>
-        <p className='text-justify px-8 py-6 bg-gray-100 rounded-lg shadow-inner text-gray-800 dark:text-white dark:bg-gray-600'>
+      <section className='grid md:flex mt-10 gap-8 px-4 sm:px-6 py-6 rounded-lg bg-white shadow-lg dark:bg-gray-400'>
+        <p className='text-justify px-8 py-6 bg-gray-100 rounded-lg shadow-inner text-gray-800 text-xl dark:text-white dark:bg-gray-600'>
           At Grannada Farm we are committed to sustainable farming practices. Our family-run operation focuses on ethical raising of poultry, fish, and bees, while innovating with black soldier fly production for eco-friendly protein and waste management. We turn chicken droppings into valuable fertilizer to support local farms.
         </p>
         <div className='flex justify-center'>
@@ -38,39 +38,39 @@ function Landing() {
         <section className="mt-8 grid gap-6 md:grid-cols-3">
         <div className="bg-white dark:bg-gray-400 p-8 rounded-lg text-center shadow hover:shadow-xl transition">
           <img src="/images/fresh.png" alt="fresh" className='mx-auto mb-4 w-20 h-20' loading='lazy'/>
-          <h3 className="text-amber-800 font-bold mb-2">Freshness</h3>
+          <h3 className="text-amber-800 font-bold mb-2 bg-amber-100 rounded-md">Freshness</h3>
           <p className='text-gray-600 dark:text-black'>Directly from farm to you. No middlemen</p>
         </div>
         <div className="bg-white dark:bg-gray-400 p-8 rounded-lg text-center shadow hover:shadow-xl transition">
           <img src='/images/chickenvga.png' alt='chicken' className='mx-auto mb-4 w-20 h-20' loading='lazy'></img>
-          <h3 className="text-amber-800 font-bold mb-2">Variety</h3>
-          <p className='text-gray-600 dark:text-black'>One-stop shop for poultry, fish, honey and more</p>
+          <h3 className="text-amber-800 font-bold mb-2 bg-amber-100 rounded-md">Variety</h3>
+          <p className='text-gray-600 dark:text-black'>One-stop shop for poultry, fish, honey and eggs</p>
         </div>
         <div className="bg-white dark:bg-gray-400 p-8 rounded-lg text-center shadow hover:shadow-xl transition">
           <img src="/images/feedback.png" alt="feedback" className='mx-auto mb-4 w-20 h-20' loading='lazy' />
-          <h3 className="text-amber-800 font-bold mb-2">100+ Customers</h3>
+          <h3 className="text-amber-800 font-bold mb-2  bg-amber-100 rounded-md">100+ Customers</h3>
           <p className='text-gray-600 dark:text-black'>Growing demand for our products</p>
         </div>
       </section>
       </section>
-      <footer className='bg-amber-700 outline-1 outline-solid place-items-center mt-16 rounded-lg py-12 px-8'>
-        <h3 className='text-white text-3xl bg-amber-800 px-6  rounded mb-6 inline-block outline-1 outline-solid outline-white'>Let's have a talk</h3>
-         <div className="mt-4 space-y-4 rounded flex flex-col md:flex-row gap-3 justify-between items-center">
+      <footer className='bg-amber-50 outline-1 outline-solid outline-amber-900 place-items-center mt-16 rounded-lg py-6 px-6 dark:bg-gray-400'>
+        <h3 className='text-white text-3xl bg-amber-800 px-4  rounded mb-4 inline-block outline-1 outline-solid outline-white'>Let's have a talk</h3>
+         <div className="mt-4 space-y-2 rounded grid flex-col md:flex-row gap-3 justify-between items-center">
 
           
-              <div className="frost rounded px-2 py-2 flex text-amber-400 items-center">
+              <div className="frost rounded px-2 py-6 flex text-amber-00 items-center text-amber-400">
                <hr />
                |
                 <small className="px-4 font-bold text-white text-base">
                   grannada.enterprise@gmail.com</small></div>
                 
-              <div className=" frost rounded px-3 py-2 flex text-amber-400 items-center">
+              <div className=" frost rounded px-3 py-6 flex text-amber-400 items-center">
                |
-                <small className="text-base px-3 font-bold text-white">0740207040</small>
+                <small className="text-base px-3 font-bold text-white">0740 207 040</small>
 
               </div>
-              <div className="frost rounded px-3 flex py-2 text-yellow-400">
-              
+              <div className="frost rounded px-3 flex py-6 text-yellow-400">
+                |
                 <small className="px-3 font-bold text-white text-base grid:w-full">Grannada Farm</small></div>
             </div>
       </footer>
