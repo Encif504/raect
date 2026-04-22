@@ -1,5 +1,6 @@
 function Projects() {
     const projects = [
+        { title: "Chicks", img: "/images/chicks.jpg", text: "Our chick project focuses on providing healthy, day-old chicks to farmers and households. We offer both broiler and improved kienyeji breeds. All chicks are vaccinated and raised under proper brooding conditions to ensure high survival rates and healthy growth." },
         { title: "Broilers", img: "/images/broilers1.jpg", text: "Our broilers are carefully raised for meat production. We maintain structured feeding programs and clean, well ventilated housing to support healthy growth and efficient weight gain. Close monitoring helps us ensure the birds develop properly and remain in good condition. The result is tender, quality poultry meat supplied fresh to our local market." },
         { title: "Layers", img: "/images/layers.jpg", text: "Our layers are raised specifically for consistent and reliable egg production. We prioritize proper nutrition, clean housing, and routine health monitoring to maintain strong laying performance and good shell quality. We also sell healthy ex layers to farmers and households who want productive birds at an affordable price. " },
         { title: "Improved Kienyeji", img: "/images/improved.jpg", text: "This chicken  combines the strengths of different breeds to produce birds that are hardy, productive, and adaptable. These birds are suitable for both meat and egg production, making them ideal for farmers and households looking for versatility. We raise and sell hybrid chicks and mature birds to support small scale and growing poultry farmers." },
@@ -10,9 +11,9 @@ function Projects() {
 
     return (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8" >
-            <h2 className="inline-block bg-amber-900 px-4 py-2 rounded font-bold text-white mb-6">Projects</h2>
+            <h2 className="inline-block bg-amber-900 px-4 py-2 rounded font-bold text-white mb-6 font-serif">Projects</h2>
 
-            <p className="bg-gray-100 dark:bg-gray-400 dark:text-black text-gray-800 p-4 rounded max-w-4xl mx-auto leading-relaxed">
+            <p className="bg-gray-100 dark:bg-gray-400 dark:text-black text-gray-800 p-4 rounded max-w-4xl mx-auto leading-relaxed font-sans">
                Our farm operates through four key projects that work together to create a sustainable and efficient system. Each area supports the other, helping us reduce waste, improve productivity, and serve our local community with quality products
             </p>
 
@@ -21,8 +22,8 @@ function Projects() {
                     <article key={p.title} className="bg-white dark:bg-gray-400 rounded shadow overflow-hidden flex flex-col">
                         <img src={p.img} alt={p.title} loading="lazy" className="w-full h-44 sm:h-56 object-cover" />
                         <div className="p-4 flex-1 flex flex-col">
-                            <h3 className="text-amber-800 font-extrabold mb-2">{p.title}</h3>
-                            <p className="text-gray-700 flex-1 dark:text-black">{p.text}</p>
+                            <h3 className="text-amber-800 font-extrabold mb-2 font-serif">{p.title}</h3>
+                            <p className="text-gray-700 flex-1 dark:text-black font-sans">{p.text}</p>
                         </div>
                     </article>
                 ))}
@@ -42,7 +43,7 @@ function Projects() {
                     </div>
 
                     <div>
-                        <h4 className="font-bold text-lg mb-4">Opening hours</h4>
+                        <h4 className="font-bold text-lg mb-4 font-serif">Opening hours</h4>
                         <div className="text-sm space-y-1">
                             <div>Monday-Saturday</div>
                             <div>8:00 am - 6:00 pm</div>
@@ -51,9 +52,9 @@ function Projects() {
                     </div>
 
                     <div>
-                        <h4 className="font-bold text-lg mb-4">Contacts</h4>
+                        <h4 className="font-bold text-lg mb-4 font-serif">Contacts</h4>
                         <div className="text-sm space-y-2">
-                            <div><img src="/images/email.png" alt="email" className="w-4 h-4 inline mr-2"/> grannada.farm@gmail.com</div>
+                            <div><img src="/images/email.png" alt="email" className="w-4 h-4 inline mr-2"/> grannada.enterprise@gmail.com</div>
                             <div><img src="/images/phone.png" alt="phone" className="w-4 h-4 inline mr-2"/> 0740207040</div>
                             <div><img src="/images/facebook.png" alt="facebook" className="w-4 h-4 inline mr-2"/> Grannada Farm</div>
                         </div>

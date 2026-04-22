@@ -1,13 +1,14 @@
 import { useState, useEffect, useRef } from "react"
 
 const products = [
-  { id: 1, name: "Pure Honey", price: "Ksh 950/kg", image: "/images/Honey.jpg" },
-  { id: 2, name: "Egg Tray", price: "Ksh 380", image: "/images/eggs.jpg" },
-  { id: 3, name: "Broiler", price: "Ksh 450", image: "/images/broiler.jpg" },
-  { id: 4, name: "Improved Kienyeji", price: "Ksh 900-1200", image: "/images/improvedh.jpg" },
-  { id: 5, name: "Ex-layer", price: "Ksh 600/kg", image: "/images/improved-.jpg" },
-  { id: 6, name: "Tilapia", price: "Ksh 400/kg", image: "/images/Tilapia.jpg" },
-  { id: 7, name: "Black Soldier Fly & Products", price: "Dried-1000/kg, egg-1000/g, maggots-750", image: "/images/bsf.jpg" },
+  { id: 1, name: "Chicks (Day Old)", price: "Ksh 100", image: "/images/chicks.jpg" },
+  { id: 2, name: "Pure Honey", price: "Ksh 950/kg", image: "/images/Honey.jpg" },
+  { id: 3, name: "Egg Tray", price: "Ksh 380", image: "/images/eggs.jpg" },
+  { id: 4, name: "Broiler", price: "Ksh 450", image: "/images/broiler.jpg" },
+  { id: 5, name: "Improved Kienyeji", price: "Ksh 900-1200", image: "/images/improvedh.jpg" },
+  { id: 6, name: "Ex-layer", price: "Ksh 600/kg", image: "/images/improved-.jpg" },
+  { id: 7, name: "Tilapia", price: "Ksh 400/kg", image: "/images/Tilapia.jpg" },
+  { id: 8, name: "Black Soldier Fly & Products", price: "Dried-1000/kg, egg-1000/g, maggots-750", image: "/images/bsf.jpg" },
   
 ]
 
@@ -95,7 +96,7 @@ const products = [
 
   return (
     <div
-      className="relative w-full overflow-hidden "
+      className="relative w-full overflow-hidden -mt-2"
       onMouseEnter={stopAutoSlide}
       onMouseLeave={startAutoSlide}
     >
@@ -112,10 +113,10 @@ const products = [
                 alt={product.name}
                 className="w-full h-48 object-cover rounded-xl" loading="lazy"
               />
-              <h2 className="text-xl font-semibold mt-4 dark:text-amber-400">
+              <h2 className="text-xl font-semibold mt-4 dark:text-amber-400 font-serif">
                 {product.name}
               </h2>
-              <p className="text-gray-600 mt-2 dark:text-white dark:font-extrabold">
+              <p className="text-gray-600 mt-2 dark:text-white dark:font-extrabold font-sans">
                 {product.price}
               </p>
             </div>

@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: system-ui, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -15,7 +15,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Apply serif font to all headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
+}
 
+/* Apply sans-serif to body text */
+p, span, li, div {
+  font-family: system-ui, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+}
 
 body {
  margin: 0;

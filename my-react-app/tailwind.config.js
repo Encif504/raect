@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        serif: ['Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
+        sans: ['system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+      },
       animation: {
         marquee:"marquee 10s linear infinite",
     },

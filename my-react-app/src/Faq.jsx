@@ -46,7 +46,7 @@ function Faq() {
             onClick={() => toggleFAQ(index)}
             className="flex justify-between items-center p-4 cursor-pointer bg-gray-200 dark:bg-gray-400 shadow-lg"
           >
-            <h3 className="font-semibold dark:text-black">{faq.question}</h3>
+            <h3 className="font-semibold dark:text-black font-serif">{faq.question}</h3>
 
             {/* + or - */}
             <span className="text-xl font-bold dark:text-amber-900">
