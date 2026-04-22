@@ -3,7 +3,7 @@ import React from 'react'
 function Services() {
   const services = [
     { title: 'Eggs per Tray', price: 'Ksh 380 per crate', desc: 'Our eggs are collected daily to ensure freshness and strong shell quality. They are ideal for households, retailers, and bulk buyers seeking reliable supply.', img: '/images/eggs.png' },
-    { title: 'Chicks (Day Old)', price: 'Ksh 100 each', desc: 'Our day-old chicks are healthy, vaccinated, and ready for brooding. We offer both broiler and kienyeji breeds to suit your farming needs.', img: '/images/chicks.jpg' },
+    { title: 'Chicks (Day Old)', price: 'Ksh 100 each', desc: 'Our day-old chicks are healthy, vaccinated, and ready for brooding. We offer  and Improved kienyeji breeds to suit your farming needs.', img: '/images/chicks.jpg' },
     { title: 'Broiler Chicken', price: 'Ksh 450 per head', desc: 'Our broilers are raised under proper care to ensure healthy growth and quality meat. They are supplied fresh to meet local market demand.', img: '/images/broiler.jpg' },
     { title: 'Improved Kienyeji Chicken', price: 'Ksh 500 from 9 weeks', desc: 'Our hybrid chickens are hardy, adaptable, and suitable for both meat and egg production. We offer both chicks and mature birds depending on customer needs.', img: '/images/improved-.jpg' },
     
