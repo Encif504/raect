@@ -8,7 +8,7 @@ function Landing() {
       <section className="relative mt-10 bg-cover bg-center rounded-lg overflow-hidden h-96 md:h-128" style={{ backgroundImage: "url('/images/hero.jpg')" }}>
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative z-10 p-10 md:p-20 text-center sm:place-items-center">
-          <h1 className="text-3xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-amber-400 drop-shadow-lg transition-all duration-500 ease-in font-serif">Fresh, Sustainable Produce Straight from our farm</h1>
+          <h1 className=" sm:text-2xl md:text-3xl lg:text-4xl font-bold text-amber-400 drop-shadow-lg transition-all duration-500 ease-in font-serif">Fresh, Sustainable Produce Straight from our farm</h1>
           <p className="text-gray-200 mt-4 max-w-2xl mx-auto leading-relaxed text-base sm:text-lg md:text-xl lg:text-2xl font-sans">Discover our range of eggs, fish, broilers, ex-layers, honey, dried black soldier flies, maggots, larvae and nutrient-rich chicken droppings.</p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 sm:gap-8 justify-center">
             <Link to="projects" smooth={true} duration={500} className="px-6 py-3  text-yellow-400 font-bold rounded shadow-lg hover:from-amber-700 outline-1 outline-solid outline-amber-50 hover:to-amber-900 transition">Explore Now →</Link>
