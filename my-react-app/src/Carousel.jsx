@@ -127,14 +127,14 @@ const products = [
       {/* Controls */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-amber-800 text-white px-2 py-1  rounded-full text-2xl"
+        className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 bg-amber-800 text-white px-2 py-1 rounded-full text-2xl"
       >
         ‹
       </button>
 
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-amber-800 text-white px-2 py-1 rounded-full text-2xl"
+        className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 bg-amber-800 text-white px-2 py-1 rounded-full text-2xl"
       >
         ›
       </button>
