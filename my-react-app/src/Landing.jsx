@@ -8,7 +8,7 @@ function Landing() {
       <section className="relative mt-10 bg-cover bg-center rounded-lg overflow-hidden h-96 md:h-128" style={{ backgroundImage: "url('/images/hero.jpg')" }}>
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative z-10 p-10 md:p-20 text-center sm:place-items-center">
-          <h1 className=" sm:text-2xl md:text-3xl lg:text-4xl font-bold text-amber-400 drop-shadow-lg transition-all duration-500 ease-in font-serif break-before-left">Fresh, Sustainable Produce Straight from Our Farm</h1>
+          <h1 className=" sm:text-2xl md:text-3xl lg:text-4xl font-bold text-amber-400 drop-shadow-lg transition-all duration-500 ease-in font-serif break-before-left">A complete farm ecosystem, built for the future</h1>
           <p className="text-gray-200 mt-4 max-w-2xl mx-auto leading-relaxed text-base sm:text-lg md:text-xl lg:text-2xl font-sans">Discover our range of eggs, fish, broilers, ex-layers, honey, dried black soldier flies, maggots, larvae and nutrient-rich chicken droppings.</p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 sm:gap-8 justify-center">
             <Link to="projects" smooth={true} duration={500} className="px-6 py-3  text-yellow-400 font-bold rounded shadow-lg hover:from-amber-700 outline-1 outline-solid outline-amber-50 hover:to-amber-900 transition">Explore Now →</Link>
@@ -48,7 +48,7 @@ function Landing() {
             <img src='/images/chickenvga.png' alt='chicken' className='w-10 h-10' loading='lazy'></img>
           </div>
           <h3 className="text-amber-900 dark:text-amber-200 font-bold mb-3 text-xl font-serif">Variety</h3>
-          <p className='text-gray-700 dark:text-gray-200 font-sans px-2'>One-stop shop for poultry, fish, honey and eggs</p>
+          <p className='text-gray-700 dark:text-gray-200 font-sans px-2'>Diverse farm products, One sustainable source</p>
         </div>
         <div className="bg-amber-100 dark:from-gray-600 dark:to-gray-500 p-8 rounded-xl text-center shadow-lg border border-amber-200 dark:border-amber-700 hover:shadow-2xl hover:scale-105 transition-all duration-300">
           <div className="bg-amber-200 dark:bg-amber-600 w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center">

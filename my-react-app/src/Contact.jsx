@@ -136,31 +136,31 @@ function Contacts() {
           <div className="bg-linear-to-br from-amber-50 to-amber-100 dark:from-gray-600 dark:to-gray-500 p-8 rounded-xl shadow-lg border border-amber-200 dark:border-amber-700">
             <h3 className="text-xl font-bold text-amber-900 dark:text-amber-200 mb-6 font-serif">Direct Contact Details</h3>
             <div className="space-y-4">
-              <div className="flex items-center gap-4 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <div className="grid grid-cols-[auto_1fr] items-center gap-4 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow sm:flex">
                 <div className="bg-amber-100 dark:bg-amber-600 p-3 rounded-full">
                   <img src="/images/email.png" alt="email" className="w-5 h-5"/>
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="text-sm text-gray-500 dark:text-gray-300 font-sans">Email</p>
-                  <a href="mailto:grannada.enterprise@gmail.com" className="text-amber-800 dark:text-amber-200 font-semibold hover:text-amber-600 font-sans">grannada.enterprise@gmail.com</a>
+                  <a href="mailto:grannada.enterprise@gmail.com" className="text-amber-800 dark:text-amber-200 font-semibold hover:text-amber-600 font-sans break-words">grannada.enterprise@gmail.com</a>
                 </div>
               </div>
-              <div className="flex items-center gap-4 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <div className="grid grid-cols-[auto_1fr] items-center gap-4 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow sm:flex">
                 <div className="bg-amber-100 dark:bg-amber-600 p-3 rounded-full">
                   <img src="/images/phone.png" alt="phone" className="w-5 h-5"/>
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="text-sm text-gray-500 dark:text-gray-300 font-sans">Phone</p>
-                  <a href="tel:0740207040" className="text-amber-800 dark:text-amber-200 font-semibold hover:text-amber-600 font-sans">0740 207 040</a>
+                  <a href="tel:0740207040" className="text-amber-800 dark:text-amber-200 font-semibold hover:text-amber-600 font-sans break-words">0740 207 040</a>
                 </div>
               </div>
-              <div className="flex items-center gap-4 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+              <div className="grid grid-cols-[auto_1fr] items-center gap-4 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow sm:flex">
                 <div className="bg-amber-100 dark:bg-amber-600 p-3 rounded-full">
                   <img src="/images/facebook.png" alt="facebook" className="w-5 h-5"/>
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="text-sm text-gray-500 dark:text-gray-300 font-sans">Facebook</p>
-                  <span className="text-amber-800 dark:text-amber-200 font-semibold font-sans">Grannada Farm</span>
+                  <span className="text-amber-800 dark:text-amber-200 font-semibold font-sans break-words">Grannada Farm</span>
                 </div>
               </div>
             </div>
