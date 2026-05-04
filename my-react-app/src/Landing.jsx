@@ -5,7 +5,7 @@ import Carousel from './Carousel'
 function Landing() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6  lg:px-8 py-6 font-sans" id="home" name="home">
-      <section className="relative mt-10 bg-cover bg-center rounded-lg overflow-hidden h-96 md:h-128" style={{ backgroundImage: "url('/images/hero.jpg')" }}>
+      <section className="relative mt-10 bg-cover bg-center rounded-lg overflow-hidden min-h-112 md:min-h-144" style={{ backgroundImage: "url('/images/hero.jpg')" }}>
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative z-10 p-10 md:p-20 text-center sm:place-items-center">
           <h1 className=" sm:text-2xl md:text-3xl lg:text-4xl font-bold text-amber-400 drop-shadow-lg transition-all duration-500 ease-in font-serif break-before-left">A complete farm ecosystem, built for the future</h1>
