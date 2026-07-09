@@ -44,7 +44,7 @@ function Faq() {
           {/* Question Row */}
           <div
             onClick={() => toggleFAQ(index)}
-            className="flex justify-between items-center p-4 cursor-pointer bg-gray-200 dark:bg-gray-400 shadow-lg"
+            className="flex justify-between items-center p-4 cursor-pointer bg-gray-200 dark:bg-gray-600 shadow-lg"
           >
             <h3 className="font-semibold dark:text-black font-serif">{faq.question}</h3>
 
@@ -56,7 +56,7 @@ function Faq() {
 
           {/* Answer */}
           {activeIndex === index && (
-            <div className="p-4 bg-gray-400 tracking-tighter dark:text-amber-800">
+            <div className="p-4 bg-gray-600 tracking-tighter dark:text-white">
               {faq.answer}
             </div>
           )}

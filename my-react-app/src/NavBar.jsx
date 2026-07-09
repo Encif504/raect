@@ -34,7 +34,7 @@ function NavBar() {
 
       {/* Mobile Dropdown Menu */}
       {open && (
-        <div className="md:hidden bg-white dark:bg-gray-500 dark:text-yellow-400 px-4 pb-4 flex flex-col space-y-2 shadow-md">
+        <div className="md:hidden bg-white dark:bg-gray-600 dark:text-yellow-400 px-4 pb-4 flex flex-col space-y-2 shadow-md">
           <Link to="home" smooth={true} duration={500} className="block py-2 px-2 rounded hover:bg-amber-700 hover:text-white cursor-pointer" onClick={() => setOpen(false)}>Home</Link>
           <Link to="about" smooth={true} duration={500} className="block py-2 px-2 rounded hover:bg-amber-700 hover:text-white cursor-pointer" onClick={() => setOpen(false)}>About</Link>
           <Link to="products" smooth={true} duration={500} className="block py-2 px-2 rounded hover:bg-amber-700 hover:text-white cursor-pointer" onClick={() => setOpen(false)}>Products</Link>

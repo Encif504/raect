@@ -107,7 +107,7 @@ const products = [
       >
         {extendedProducts.map((product, i) => (
           <div key={i} className="min-w-full flex justify-center">
-            <div className="bg-white shadow-xl rounded-2xl p-6 w-80 text-center dark:bg-gray-500">
+            <div className="bg-white shadow-xl rounded-2xl p-6 w-80 text-center dark:bg-gray-600">
               <img
                 src={product.image}
                 alt={product.name}

@@ -60,11 +60,11 @@ function Contacts() {
       </header>
 
       <div className="mt-10 flex flex-col lg:flex-row lg:items-start lg:gap-10">
-        <form ref={formRef} className="w-full lg:w-2/3 bg-white dark:bg-gray-400 p-8 rounded-xl shadow-lg border border-amber-100 dark:border-amber-700" onSubmit={handleSubmit}>
+        <form ref={formRef} className="w-full lg:w-2/3 bg-white dark:bg-gray-600 p-8 rounded-xl shadow-lg border border-amber-100 dark:border-amber-700" onSubmit={handleSubmit}>
           <h3 className="text-xl font-bold text-amber-800 dark:text-amber-200 mb-6 font-serif">Send us a Message</h3>
           <div className="grid gap-5 dark:text-black">
             <div>
-              <label className="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-1 font-sans">Name *</label>
+              <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1 font-sans">Name *</label>
               <input
                 type="text"
                 name="name"
@@ -72,12 +72,8 @@ function Contacts() {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full py-3 rounded-lg px-4 bg-gray-50 dark:bg-gray-300 border border-gray-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all"
+                className="w-full py-3 rounded-lg px-4 bg-gray-50 dark:bg-gray-500 border border-gray-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all"
               />
-            </div>
-
-            <div>
-              <label className="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-1 font-sans">Phone</label>
               <input
                 type="tel"
                 name="phone"
@@ -85,12 +81,8 @@ function Contacts() {
                 value={formData.phone}
                 onChange={handleChange}
                
-                className="w-full py-3 rounded-lg px-4 bg-gray-50 dark:bg-gray-300 border border-gray-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all"
+                className="w-full py-3 rounded-lg px-4 bg-gray-50 dark:bg-gray-500 border border-gray-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all"
               />
-            </div>
-
-            <div>
-              <label className="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-1 font-sans">Email *</label>
               <input
                 type="email"
                 name="email"
@@ -98,31 +90,23 @@ function Contacts() {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full py-3 rounded-lg px-4 bg-gray-50 dark:bg-gray-300 border border-gray-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all"
+                className="w-full py-3 rounded-lg px-4 bg-gray-50 dark:bg-gray-500 border border-gray-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all"
               />
-            </div>
-
-            <div>
-              <label className="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-1 font-sans">Subject *</label>
               <input
                 type="text"
                 name="subject"
                 placeholder="What is this about?"
                 value={formData.subject}
                 onChange={handleChange}
-                className="w-full py-3 rounded-lg px-4 bg-gray-50 dark:bg-gray-300 border border-gray-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all"
+                className="w-full py-3 rounded-lg px-4 bg-gray-50 dark:bg-gray-500 border border-gray-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all"
               />
-            </div>
-
-            <div>
-              <label className="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-1 font-sans">Message *</label>
               <textarea
                 name="message"
                 placeholder="Your message..."
                 value={formData.message}
                 onChange={handleChange}
                 rows="5"
-                className="w-full py-3 rounded-lg px-4 bg-gray-50 dark:bg-gray-300 border border-gray-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all resize-none"
+                className="w-full py-3 rounded-lg px-4 bg-gray-50 dark:bg-gray-500 border border-gray-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all resize-none"
               />
             </div>
 
@@ -136,7 +120,7 @@ function Contacts() {
           <div className="bg-linear-to-br from-amber-50 to-amber-100 dark:from-gray-600 dark:to-gray-500 p-8 rounded-xl shadow-lg border border-amber-200 dark:border-amber-700">
             <h3 className="text-xl font-bold text-amber-900 dark:text-amber-200 mb-6 font-serif">Direct Contact Details</h3>
             <div className="space-y-4">
-              <div className="grid grid-cols-[auto_1fr] items-center gap-4 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow sm:flex">
+            <div className="grid grid-cols-[auto_1fr] items-center gap-4 bg-white dark:bg-gray-600 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow sm:flex">
                 <div className="bg-amber-100 dark:bg-amber-600 p-3 rounded-full">
                   <img src="/images/email.png" alt="email" className="w-5 h-5"/>
                 </div>
@@ -145,7 +129,7 @@ function Contacts() {
                   <a href="mailto:grannada.enterprise@gmail.com" className="text-amber-800 dark:text-amber-200 font-semibold hover:text-amber-600 font-sans break-words">grannada.enterprise@gmail.com</a>
                 </div>
               </div>
-              <div className="grid grid-cols-[auto_1fr] items-center gap-4 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow sm:flex">
+            <div className="grid grid-cols-[auto_1fr] items-center gap-4 bg-white dark:bg-gray-600 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow sm:flex">
                 <div className="bg-amber-100 dark:bg-amber-600 p-3 rounded-full">
                   <img src="/images/phone.png" alt="phone" className="w-5 h-5"/>
                 </div>
@@ -154,7 +138,7 @@ function Contacts() {
                   <a href="tel:0740207040" className="text-amber-800 dark:text-amber-200 font-semibold hover:text-amber-600 font-sans break-words">0740 207 040</a>
                 </div>
               </div>
-              <div className="grid grid-cols-[auto_1fr] items-center gap-4 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow sm:flex">
+            <div className="grid grid-cols-[auto_1fr] items-center gap-4 bg-white dark:bg-gray-600 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow sm:flex">
                 <div className="bg-amber-100 dark:bg-amber-600 p-3 rounded-full">
                   <img src="/images/facebook.png" alt="facebook" className="w-5 h-5"/>
                 </div>

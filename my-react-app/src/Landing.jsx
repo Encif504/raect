@@ -12,7 +12,7 @@ function Landing() {
           <p className="text-gray-200 mt-4 max-w-2xl mx-auto leading-relaxed text-base sm:text-lg md:text-xl lg:text-2xl font-sans">Discover our range of eggs, fish, broilers, ex-layers, honey, dried black soldier flies, maggots, larvae and nutrient-rich chicken droppings.</p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 sm:gap-8 justify-center">
             <Link to="projects" smooth={true} duration={500} className="px-6 py-3  text-yellow-400 font-bold rounded shadow-lg hover:from-amber-700 outline-1 outline-solid outline-amber-50 hover:to-amber-900 transition">Explore Now →</Link>
-            <Link to="products" smooth={true} duration={500} className="px-6 py-3 bg-white dark:bg-gray-300 text-amber-800 rounded-sm shadow-lg hover:bg-gray-100 transition">View Products →</Link>
+            <Link to="products" smooth={true} duration={500} className="px-6 py-3 bg-white dark:bg-gray-500 text-amber-800 rounded-sm shadow-lg hover:bg-gray-100 transition">View Products →</Link>
           </div>
         </div>
       </section>
@@ -24,8 +24,8 @@ function Landing() {
      </div>
      
      
-      <section className='grid md:flex mt-10 gap-8 px-4 sm:px-6 py-6 rounded-lg bg-white shadow-lg dark:bg-gray-400'>
-        <p className='text-justify px-8 py-6 bg-gray-100 rounded-lg shadow-inner text-gray-800 text-xl dark:text-white dark:bg-gray-600 font-sans'>
+      <section className='grid md:flex mt-10 gap-8 px-4 sm:px-6 py-6 rounded-lg bg-white shadow-lg dark:bg-gray-600'>
+        <p className='text-justify px-8 py-6 bg-gray-100 rounded-lg shadow-inner text-gray-800 text-xl dark:text-white dark:bg-gray-700 font-sans'>
           At Grannada Farm we are committed to sustainable farming practices. Our family-run operation focuses on ethical raising of poultry, fish, and bees, while innovating with black soldier fly production for eco-friendly protein and waste management. We turn chicken droppings into valuable fertilizer to support local farms.
         </p>
         <div className='flex justify-center'>
@@ -36,26 +36,26 @@ function Landing() {
 
         <h2 className='font-extrabold text-4xl text-amber-900 text-center dark:text-amber-300 font-serif'>Why choose us</h2>
         <section className="mt-8 grid gap-6 md:grid-cols-3">
-        <div className="bg-amber-100 bg-linear-to-br from-amber-50 to-amber-100 dark:from-gray-600 dark:to-gray-500 p-8 rounded-xl text-center shadow-lg border border-amber-200 dark:border-amber-700 hover:shadow-2xl hover:scale-105 transition-all duration-300">
+        <div className="bg-amber-100 bg-linear-to-br from-amber-50 to-amber-100 dark:from-gray-600 dark:to-gray-700 p-8 rounded-xl text-center shadow-lg border border-amber-200 dark:border-amber-700 hover:shadow-2xl hover:scale-105 transition-all duration-300">
           <div className="bg-amber-200 dark:bg-amber-600 w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center overflow-hidden">
             <img src="/images/fresh.png" alt="fresh" className='w-10 h-10 object-contain' loading='lazy'/>
           </div>
           <h3 className="text-amber-900 dark:text-amber-200 font-bold mb-3 text-xl font-serif">Freshness</h3>
-          <p className='text-gray-700 dark:text-gray-200 font-sans px-2'>Directly from farm to you. No middlemen</p>
+          <p className='text-gray-700 dark:text-gray-300 font-sans px-2'>Directly from farm to you. No middlemen</p>
         </div>
-        <div className="bg-amber-100 dark:from-gray-600 dark:to-gray-500 p-8 rounded-xl text-center shadow-lg border border-amber-200 dark:border-amber-700 hover:shadow-2xl hover:scale-105 transition-all duration-300">
+        <div className="bg-amber-100 bg-linear-to-br from-amber-50 to-amber-100 dark:from-gray-600 dark:to-gray-700 p-8 rounded-xl text-center shadow-lg border border-amber-200 dark:border-amber-700 hover:shadow-2xl hover:scale-105 transition-all duration-300">
           <div className="bg-amber-200 dark:bg-amber-600 w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center">
             <img src='/images/chickenvga.png' alt='chicken' className='w-10 h-10' loading='lazy'></img>
           </div>
           <h3 className="text-amber-900 dark:text-amber-200 font-bold mb-3 text-xl font-serif">Variety</h3>
-          <p className='text-gray-700 dark:text-gray-200 font-sans px-2'>Diverse farm products, One sustainable source</p>
+          <p className='text-gray-700 dark:text-gray-300 font-sans px-2'>Diverse farm products, One sustainable source</p>
         </div>
-        <div className="bg-amber-100 dark:from-gray-600 dark:to-gray-500 p-8 rounded-xl text-center shadow-lg border border-amber-200 dark:border-amber-700 hover:shadow-2xl hover:scale-105 transition-all duration-300">
+        <div className="bg-amber-100 bg-linear-to-br from-amber-50 to-amber-100 dark:from-gray-600 dark:to-gray-700 p-8 rounded-xl text-center shadow-lg border border-amber-200 dark:border-amber-700 hover:shadow-2xl hover:scale-105 transition-all duration-300">
           <div className="bg-amber-200 dark:bg-amber-600 w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center">
             <img src="/images/feedback.png" alt="feedback" className='w-10 h-10' loading='lazy' />
           </div>
           <h3 className="text-amber-900 dark:text-amber-200 font-bold mb-3 text-xl font-serif">100+ Customers</h3>
-          <p className='text-gray-700 dark:text-gray-200 font-sans px-2'>Growing demand for our products</p>
+          <p className='text-gray-700 dark:text-gray-300 font-sans px-2'>Growing demand for our products</p>
         </div>
       </section>
       </section>
