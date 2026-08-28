@@ -64,9 +64,10 @@ function Contacts() {
           <h3 className="text-xl font-bold text-amber-800 dark:text-amber-200 mb-6 font-serif">Send us a Message</h3>
           <div className="grid gap-5 dark:text-black">
             <div>
-              <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1 font-sans">Name *</label>
+              <label htmlFor="name" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1 font-sans">Name *</label>
               <input
                 type="text"
+                id="name"
                 name="name"
                 placeholder="Your name"
                 value={formData.name}
@@ -74,17 +75,24 @@ function Contacts() {
                 required
                 className="w-full py-3 rounded-lg px-4 bg-gray-50 dark:bg-gray-500 border border-gray-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all"
               />
+            </div>
+            <div>
+              <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1 font-sans">Phone</label>
               <input
                 type="tel"
+                id="phone"
                 name="phone"
                 placeholder="Your phone number"
                 value={formData.phone}
                 onChange={handleChange}
-               
                 className="w-full py-3 rounded-lg px-4 bg-gray-50 dark:bg-gray-500 border border-gray-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all"
               />
+            </div>
+            <div>
+              <label htmlFor="email" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1 font-sans">Email *</label>
               <input
                 type="email"
+                id="email"
                 name="email"
                 placeholder="your@email.com"
                 value={formData.email}
@@ -92,15 +100,23 @@ function Contacts() {
                 required
                 className="w-full py-3 rounded-lg px-4 bg-gray-50 dark:bg-gray-500 border border-gray-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all"
               />
+            </div>
+            <div>
+              <label htmlFor="subject" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1 font-sans">Subject</label>
               <input
                 type="text"
+                id="subject"
                 name="subject"
                 placeholder="What is this about?"
                 value={formData.subject}
                 onChange={handleChange}
                 className="w-full py-3 rounded-lg px-4 bg-gray-50 dark:bg-gray-500 border border-gray-200 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all"
               />
+            </div>
+            <div>
+              <label htmlFor="message" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1 font-sans">Message</label>
               <textarea
+                id="message"
                 name="message"
                 placeholder="Your message..."
                 value={formData.message}
