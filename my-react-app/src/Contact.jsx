@@ -32,7 +32,7 @@ function Contacts() {
     setStatus(null);
 
     try {
-      await emailjs.sendForm('service_nbye68l', 'template_1websmr', formRef.current, 'YI1j8K6airy7xAFbH');
+      await emailjs.sendForm('service_nbye68l', 'template_42gfjhv', formRef.current, 'YI1j8K6airy7xAFbH');
       setStatus('success');
       setFormData({
         name: "",
