@@ -64,7 +64,7 @@ function Contacts() {
           <h3 className="text-xl font-bold text-amber-800 dark:text-amber-200 mb-6 font-serif">Send us a Message</h3>
           <div className="grid gap-5 dark:text-black">
             <div>
-              <label htmlFor="name" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1 font-sans">Name *</label>
+              <label htmlFor="name" className="block text-left lg:text-center text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1 font-sans">Name *</label>
               <input
                 type="text"
                 id="name"
@@ -77,7 +77,7 @@ function Contacts() {
               />
             </div>
             <div>
-              <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1 font-sans">Phone</label>
+              <label htmlFor="phone" className="block text-left lg:text-center text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1 font-sans">Phone</label>
               <input
                 type="tel"
                 id="phone"
@@ -89,7 +89,7 @@ function Contacts() {
               />
             </div>
             <div>
-              <label htmlFor="email" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1 font-sans">Email *</label>
+              <label htmlFor="email" className="block text-left lg:text-center text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1 font-sans">Email *</label>
               <input
                 type="email"
                 id="email"
@@ -102,7 +102,7 @@ function Contacts() {
               />
             </div>
             <div>
-              <label htmlFor="subject" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1 font-sans">Subject</label>
+              <label htmlFor="subject" className="block text-left lg:text-center text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1 font-sans">Subject</label>
               <input
                 type="text"
                 id="subject"
@@ -114,7 +114,7 @@ function Contacts() {
               />
             </div>
             <div>
-              <label htmlFor="message" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1 font-sans">Message</label>
+              <label htmlFor="message" className="block text-left lg:text-center text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1 font-sans">Message</label>
               <textarea
                 id="message"
                 name="message"
