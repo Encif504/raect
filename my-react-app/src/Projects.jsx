@@ -54,7 +54,7 @@ function Projects() {
                     <div>
                         <h4 className="font-bold text-lg mb-4 font-serif">Contacts</h4>
                         <div className="text-sm space-y-2">
-                            <div><img src="/images/email.png" alt="email" className="w-4 h-4 inline mr-2"/> grannada.enterprise@gmail.com</div>
+                            <div><img src="/images/email.png" alt="email" className="w-4 h-4 inline mr-2"/> grannadaenterprises@gmail.com</div>
                             <div><img src="/images/phone.png" alt="phone" className="w-4 h-4 inline mr-2"/> 0740207040</div>
                             <div><img src="/images/facebook.png" alt="facebook" className="w-4 h-4 inline mr-2"/> Grannada Farm</div>
                         </div>

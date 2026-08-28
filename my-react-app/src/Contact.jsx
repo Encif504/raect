@@ -32,7 +32,7 @@ function Contacts() {
     setStatus(null);
 
     try {
-      await emailjs.sendForm('service_87p6upc', 'template_1websmr', formRef.current, 'YI1j8K6airy7xAFbH');
+      await emailjs.sendForm('service_nbye68l', 'template_1websmr', formRef.current, 'YI1j8K6airy7xAFbH');
       setStatus('success');
       setFormData({
         name: "",
@@ -126,7 +126,7 @@ function Contacts() {
                 </div>
                 <div className="min-w-0">
                   <p className="text-sm text-gray-500 dark:text-gray-300 font-sans">Email</p>
-                  <a href="mailto:grannada.enterprise@gmail.com" className="text-amber-800 dark:text-amber-200 font-semibold hover:text-amber-600 font-sans break-words">grannada.enterprise@gmail.com</a>
+                  <a href="mailto:grannadaenterprises@gmail.com" className="text-amber-800 dark:text-amber-200 font-semibold hover:text-amber-600 font-sans break-words">grannadaenterprises@gmail.com</a>
                 </div>
               </div>
             <div className="grid grid-cols-[auto_1fr] items-center gap-4 bg-white dark:bg-gray-600 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow sm:flex">

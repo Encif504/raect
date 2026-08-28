@@ -83,7 +83,7 @@ From the beginning, our goal was clear: produce healthy food in a way that is re
             <img src="/images/phone.png" alt="phone" className="w-5 h-5"/>
             0740 207 040
           </a>
-          <a href="mailto:grannada.enterprise@gmail.com" className="flex items-center gap-3 bg-amber-600 text-white px-6 py-3 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 font-semibold">
+          <a href="mailto:grannadaenterprises@gmail.com" className="flex items-center gap-3 bg-amber-600 text-white px-6 py-3 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 font-semibold">
             <img src="/images/email.png" alt="email" className="w-5 h-5"/>
             Email Us
           </a>

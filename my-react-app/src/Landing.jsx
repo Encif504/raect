@@ -68,8 +68,8 @@ function Landing() {
                 <div className="bg-amber-200 dark:bg-amber-700 p-2 rounded-full shrink-0">
                   <img src="/images/email.png" alt="email" className="w-5 h-5"/>
                 </div>
-                <a href="mailto:grannada.enterprise@gmail.com" className="text-amber-800 dark:text-amber-200 font-semibold hover:text-amber-600 dark:hover:text-amber-300 font-sans text-xs md:text-sm break-all">
-                  grannada.enterprise@gmail.com
+                <a href="mailto:grannadaenterprises@gmail.com" className="text-amber-800 dark:text-amber-200 font-semibold hover:text-amber-600 dark:hover:text-amber-300 font-sans text-xs md:text-sm break-all">
+                  grannadaenterprises@gmail.com
                 </a></div>
                 
               <div className="flex items-center gap-3 bg-amber-100 dark:bg-gray-800 px-4 py-3 rounded-lg shadow-md hover:shadow-lg transition-shadow w-full max-w-xs">
