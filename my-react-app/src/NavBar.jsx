@@ -9,7 +9,7 @@ function NavBar() {
     <nav className="fixed top-0 w-full bg-amber-400 shadow z-50">
       <div className="max-w-screen mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
         <div className="flex items-center gap-3">
-          <img src={logo} alt="logo" className="w-12 h-8 md:w-20 md:h-10 object-contain" />
+          <img src={logo} alt="logo" className="w-12 h-8 md:w-20 md:h-10 object-contain" loading="lazy" decoding="async" />
           <h6 className="text-amber-800 font-bold ml-1">Grannada Enterprises</h6>
         </div>
 

@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import emailjs from '@emailjs/browser';
 import Faq from "./Faq";
 
@@ -12,11 +12,7 @@ function Contacts() {
   });
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState(null); // 'success' or 'error'
-  const formRef = useRef();
-
-  useEffect(() => {
-    emailjs.init('YI1j8K6airy7xAFbH');
-  }, []);
+  const formRef = useRef(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -32,7 +28,10 @@ function Contacts() {
     setStatus(null);
 
     try {
-      await emailjs.sendForm('service_nbye68l', 'template_42gfjhv', formRef.current, 'YI1j8K6airy7xAFbH');
+      await emailjs.sendForm('service_nbye68l', 'template_42gfjhv', formRef.current, {
+        publicKey: 'YI1j8K6airy7xAFbH',
+      });
+
       setStatus('success');
       setFormData({
         name: "",
@@ -138,7 +137,7 @@ function Contacts() {
             <div className="space-y-4">
             <div className="grid grid-cols-[auto_1fr] items-center gap-4 bg-white dark:bg-gray-600 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow sm:flex">
                 <div className="bg-amber-100 dark:bg-amber-600 p-3 rounded-full">
-                  <img src="/images/email.png" alt="email" className="w-5 h-5"/>
+                  <img src="/images/email.png" alt="email" className="w-5 h-5" loading="lazy" decoding="async"/>
                 </div>
                 <div className="min-w-0">
                   <p className="text-sm text-gray-500 dark:text-gray-300 font-sans">Email</p>
@@ -147,7 +146,7 @@ function Contacts() {
               </div>
             <div className="grid grid-cols-[auto_1fr] items-center gap-4 bg-white dark:bg-gray-600 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow sm:flex">
                 <div className="bg-amber-100 dark:bg-amber-600 p-3 rounded-full">
-                  <img src="/images/phone.png" alt="phone" className="w-5 h-5"/>
+                  <img src="/images/phone.png" alt="phone" className="w-5 h-5" loading="lazy" decoding="async"/>
                 </div>
                 <div className="min-w-0">
                   <p className="text-sm text-gray-500 dark:text-gray-300 font-sans">Phone</p>
@@ -156,7 +155,7 @@ function Contacts() {
               </div>
             <div className="grid grid-cols-[auto_1fr] items-center gap-4 bg-white dark:bg-gray-600 p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow sm:flex">
                 <div className="bg-amber-100 dark:bg-amber-600 p-3 rounded-full">
-                  <img src="/images/facebook.png" alt="facebook" className="w-5 h-5"/>
+                  <img src="/images/facebook.png" alt="facebook" className="w-5 h-5" loading="lazy" decoding="async"/>
                 </div>
                 <div className="min-w-0">
                   <p className="text-sm text-gray-500 dark:text-gray-300 font-sans">Facebook</p>
@@ -172,7 +171,7 @@ function Contacts() {
               <p className="mt-4 text-sm text-gray-600 dark:text-gray-300 text-center font-sans">Guaranteed response within 24 hrs<br/>Monday-Saturday, 8am-5pm</p>
             </div>
             <div className="mt-6">
-              <img src="images/image.jpg" className="w-full sm:w-3/4 md:w-2/3 lg:w-1/2 mx-auto rounded-lg shadow-md" alt="contact" />
+              <img src="images/image.jpg" className="w-full sm:w-3/4 md:w-2/3 lg:w-1/2 mx-auto rounded-lg shadow-md" alt="contact" loading="lazy" decoding="async" />
             </div>
             
           </div>

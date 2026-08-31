@@ -40,7 +40,7 @@ From the beginning, our goal was clear: produce healthy food in a way that is re
 
         </div>
         <div className="flex justify-center mt-6 md:mt-0">
-          <img src="/images/improved-.jpg" alt="chicken" className="rounded w-full max-w-md" />
+          <img src="/images/improved-.jpg" alt="chicken" className="rounded w-full max-w-md" loading="lazy" decoding="async" />
         </div>
         
         
@@ -80,11 +80,11 @@ From the beginning, our goal was clear: produce healthy food in a way that is re
         <p className="text-amber-100 mb-6 font-sans">We welcome visitors to see firsthand how we raise our animals. Contact us to schedule your visit!</p>
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
           <a href="tel:0740207040" className="flex items-center gap-3 bg-white text-amber-900 px-6 py-3 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 font-semibold">
-            <img src="/images/phone.png" alt="phone" className="w-5 h-5"/>
+            <img src="/images/phone.png" alt="phone" className="w-5 h-5" loading="lazy" decoding="async"/>
             0740 207 040
           </a>
           <a href="mailto:grannadaenterprises@gmail.com" className="flex items-center gap-3 bg-amber-600 text-white px-6 py-3 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 font-semibold">
-            <img src="/images/email.png" alt="email" className="w-5 h-5"/>
+            <img src="/images/email.png" alt="email" className="w-5 h-5" loading="lazy" decoding="async"/>
             Email Us
           </a>
         </div>
