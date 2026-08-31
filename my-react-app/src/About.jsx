@@ -4,7 +4,7 @@ const  products=['Fresh eggs','Ex layers','Hybrid chicken','Honey','Fish','Dried
 
 function About() {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10" id="#about">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 text-left" id="#about">
       <section className="rounded overflow-hidden">
         <div className="relative bg-cover bg-center rounded" style={{ backgroundImage: "url('/images/improvedh.jpg')" }}>
           <div className="frost p-8 text-center">
