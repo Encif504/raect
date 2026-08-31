@@ -14,6 +14,10 @@ function Contacts() {
   const [status, setStatus] = useState(null); // 'success' or 'error'
   const formRef = useRef(null);
 
+  const serviceId = import.meta.env.SERVICE_ID;
+  const templateId = import.meta.env.TEMPLATE_ID;
+  const publicKey = import.meta.env.KEY;
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
@@ -27,9 +31,16 @@ function Contacts() {
     setLoading(true);
     setStatus(null);
 
+    if (!serviceId || !templateId || !publicKey) {
+      setStatus('error');
+      console.error('EmailJS credentials are missing. Set VITE_EMAILJS_SERVICE_ID, VITE_EMAILJS_TEMPLATE_ID, and VITE_EMAILJS_PUBLIC_KEY in your .env file.');
+      setLoading(false);
+      return;
+    }
+
     try {
-      await emailjs.sendForm('service_nbye68l', 'template_42gfjhv', formRef.current, {
-        publicKey: 'YI1j8K6airy7xAFbH',
+      await emailjs.sendForm(serviceId, templateId, formRef.current, {
+        publicKey,
       });
 
       setStatus('success');
