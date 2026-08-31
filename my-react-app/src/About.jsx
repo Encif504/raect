@@ -6,11 +6,21 @@ function About() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 text-left" id="#about">
       <section className="rounded overflow-hidden">
-        <div className="relative bg-cover bg-center rounded" style={{ backgroundImage: "url('/images/improvedh.jpg')" }}>
-          <div className="frost p-8 text-center">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-amber-300 font-serif">About Our farm</h2>
-            <p className="text-white font-semibold mt-2 bg-grey-600 rounded font-sans">We are a family owned farm built on hard work, trust, and a deep respect for nature. What started in 2020 as a simple idea has grown into a thriving, community focused farm that we are proud to call our own.
-From the beginning, our goal was clear: produce healthy food in a way that is responsible, sustainable, and beneficial to the people around us. Every decision we make reflects that commitment.</p>
+        <div
+          className="relative min-h-[360px] md:min-h-[420px] rounded bg-cover bg-center"
+          style={{
+            backgroundImage: "url('/images/improvedh.jpg')",
+            backgroundPosition: 'center',
+            backgroundSize: 'cover'
+          }}
+        >
+          <div className="absolute inset-0 bg-black/50" />
+          <div className="relative z-10 p-8 text-center">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-amber-300 font-serif">About Our Farm</h2>
+            <p className="mx-auto mt-4 max-w-4xl rounded-xl bg-black/55 px-5 py-4 text-base md:text-lg font-semibold text-white leading-relaxed shadow-lg font-sans">
+              We are a family owned farm built on hard work, trust, and a deep respect for nature. What started in 2020 as a simple idea has grown into a thriving, community focused farm that we are proud to call our own.
+              From the beginning, our goal was clear: produce healthy food in a way that is responsible, sustainable, and beneficial to the people around us. Every decision we make reflects that commitment.
+            </p>
           </div>
         </div>
       </section>
@@ -40,7 +50,9 @@ From the beginning, our goal was clear: produce healthy food in a way that is re
 
         </div>
         <div className="flex justify-center mt-6 md:mt-0">
-          <img src="/images/improved-.jpg" alt="chicken" className="rounded w-full max-w-md" loading="lazy" decoding="async" />
+          <div className="overflow-hidden rounded-2xl border-4 border-amber-200 bg-amber-50 p-2 shadow-xl">
+            <img src="/images/improved-.jpg" alt="chicken" className="h-72 w-full max-w-md rounded-xl object-cover" loading="lazy" decoding="async" />
+          </div>
         </div>
         
         

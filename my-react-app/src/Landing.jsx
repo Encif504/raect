@@ -66,7 +66,7 @@ function Landing() {
           
               <div className="flex items-center gap-3 bg-amber-100 dark:bg-gray-800 px-3 py-3 rounded-lg shadow-md hover:shadow-lg transition-shadow w-full max-w-xs">
                 <div className="bg-amber-200 dark:bg-amber-700 p-2 rounded-full shrink-0">
-                  <img src="/images/email.png" alt="email" className="w-5 h-5"/>
+                  <img src="/images/email.png" alt="email" className="w-5 h-5" loading="lazy" decoding="async" />
                 </div>
                 <a href="mailto:grannadaenterprises@gmail.com" className="text-amber-800 dark:text-amber-200 font-semibold hover:text-amber-600 dark:hover:text-amber-300 font-sans text-xs md:text-sm break-all">
                   grannadaenterprises@gmail.com
@@ -74,7 +74,7 @@ function Landing() {
                 
               <div className="flex items-center gap-3 bg-amber-100 dark:bg-gray-800 px-4 py-3 rounded-lg shadow-md hover:shadow-lg transition-shadow w-full max-w-xs">
                 <div className="bg-amber-200 dark:bg-amber-700 p-2 rounded-full shrink-0">
-                  <img src="/images/phone.png" alt="phone" className="w-5 h-5"/>
+                  <img src="/images/phone.png" alt="phone" className="w-5 h-5" loading="lazy" decoding="async" />
                 </div>
                 <a href="tel:0740207040" className="text-amber-800 dark:text-amber-200 font-semibold hover:text-amber-600 dark:hover:text-amber-300 font-sans text-sm md:text-base">
                   0740 207 040
@@ -83,7 +83,7 @@ function Landing() {
               </div>
               <div className="flex items-center gap-3 bg-amber-100 dark:bg-gray-800 px-4 py-3 rounded-lg shadow-md hover:shadow-lg transition-shadow w-full max-w-xs">
                 <div className="bg-amber-200 dark:bg-amber-700 p-2 rounded-full shrink-0">
-                  <img src="/images/facebook.png" alt="facebook" className="w-5 h-5"/>
+                  <img src="/images/facebook.png" alt="facebook" className="w-5 h-5" loading="lazy" decoding="async" />
                 </div>
                 <span className="text-amber-800 dark:text-amber-200 font-semibold font-sans text-sm md:text-base">Grannada Farm</span></div>
             </div>

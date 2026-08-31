@@ -13,7 +13,7 @@ function Projects() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8" >
             <h2 className="inline-block bg-amber-900 px-4 py-2 rounded font-bold text-white mb-6 font-serif">Projects</h2>
 
-            <p className="bg-gray-100 dark:bg-gray-600 dark:text-white text-gray-800 p-4 rounded max-w-4xl mx-auto leading-relaxed font-sans">
+            <p className="mx-auto max-w-4xl rounded-xl bg-amber-50 p-4 text-gray-800 leading-relaxed shadow-md ring-1 ring-amber-200 dark:bg-gray-600 dark:text-white font-sans">
                Our farm operates through four key projects that work together to create a sustainable and efficient system. Each area supports the other, helping us reduce waste, improve productivity, and serve our local community with quality products
             </p>
 

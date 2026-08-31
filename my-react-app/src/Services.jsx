@@ -17,11 +17,12 @@ function Services() {
 
   return (
     <div className="max-w-screen mx-auto px-4 sm:px-6 lg:px-8 py-10">
-      <header className="bg-[url('/images/eggs.png')] bg-cover bg-center rounded p-8 text-center">
-        <h2 className="text-2xl md:text-3xl font-bold text-amber-300 inline-block px-3 py-1 rounded underline frost font-serif">Our Products </h2>
+      <header className="relative overflow-hidden rounded-xl bg-[url('/images/eggs.png')] bg-cover bg-center p-8 text-center shadow-lg">
+        <div className="absolute inset-0 bg-black/45" />
+        <h2 className="relative z-10 inline-block rounded-lg border border-amber-200/60 bg-amber-900/80 px-4 py-2 text-2xl font-bold text-amber-200 md:text-3xl font-serif shadow-md">Our Products</h2>
       </header>
 
-      <p className="mt-6 bg-grey-200 text-gray-700 max-w-3xl dark:bg-gray-600 dark:text-white mx-auto text-center leading-relaxed  shadow-xl px-8 py-4 font-sans">
+      <p className="mt-6 mx-auto max-w-3xl rounded-xl bg-amber-50 px-8 py-4 text-center leading-relaxed text-gray-800 shadow-xl font-sans ring-1 ring-amber-200 dark:bg-gray-600 dark:text-white">
        Our products reflect the hard work, care, and commitment that define our farm. Every item we offer is produced with attention to quality, sustainability, and the needs of our local community. From fresh food products to value added farm resources, we ensure that what leaves our farm meets high standards and delivers real value to our customers.
       </p>
 

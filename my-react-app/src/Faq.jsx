@@ -44,19 +44,19 @@ function Faq() {
           {/* Question Row */}
           <div
             onClick={() => toggleFAQ(index)}
-            className="flex justify-between items-center p-4 cursor-pointer bg-gray-200 dark:bg-gray-600 shadow-lg"
+            className="flex cursor-pointer items-center justify-between bg-amber-50 p-4 shadow-lg ring-1 ring-amber-200 transition hover:bg-amber-100 dark:bg-gray-600"
           >
-            <h3 className="font-semibold dark:text-black font-serif">{faq.question}</h3>
+            <h3 className="font-semibold text-gray-900 font-serif dark:text-white">{faq.question}</h3>
 
             {/* + or - */}
-            <span className="text-xl font-bold dark:text-amber-900">
+            <span className="text-xl font-bold text-amber-800 dark:text-amber-300">
               {activeIndex === index ? "-" : "+"}
             </span>
           </div>
 
           {/* Answer */}
           {activeIndex === index && (
-            <div className="p-4 bg-gray-600 tracking-tighter dark:text-white">
+            <div className="bg-amber-100 p-4 text-gray-800 tracking-tight shadow-inner dark:bg-gray-700 dark:text-white">
               {faq.answer}
             </div>
           )}

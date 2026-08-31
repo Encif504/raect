@@ -14,9 +14,9 @@ function Contacts() {
   const [status, setStatus] = useState(null); // 'success' or 'error'
   const formRef = useRef(null);
 
-  const serviceId = import.meta.env.SERVICE_ID;
-  const templateId = import.meta.env.TEMPLATE_ID;
-  const publicKey = import.meta.env.KEY;
+  const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID || import.meta.env.SERVICE_ID;
+  const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || import.meta.env.TEMPLATE_ID;
+  const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || import.meta.env.KEY;
 
   const handleChange = (e) => {
     const { name, value } = e.target;
