@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* Dark styles are opt-in so the site does not change appearance with the OS theme. */
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   font-family: system-ui, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
   line-height: 1.5;
@@ -13,6 +16,12 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+:root.dark {
+  color-scheme: dark;
+  color: #f8eee0;
+  background-color: #17130f;
 }
 
 /* Apply serif font to all headings */
@@ -29,6 +38,12 @@ body {
   margin: 0;
   background: linear-gradient(180deg, #fffaf2 0%, #fff4df 100%);
   color: #2f2416;
+  overflow-x: hidden;
+}
+
+.dark body {
+  background: linear-gradient(180deg, #17130f 0%, #2a2118 100%);
+  color: #f8eee0;
 }
 
 * {
@@ -47,6 +62,11 @@ html {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  overflow-wrap: anywhere;
+}
+
+h2, h3, h4, h5, h6, p, a, span, li {
+  overflow-wrap: anywhere;
 }
 
 button {

@@ -29,8 +29,8 @@ function Services() {
       <section className="mt-8 grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {services.map((s) => (
           <div key={s.title} className="flex gap-4 bg-white dark:bg-gray-600 rounded shadow p-4 items-start">
-            <img src={s.img} alt={s.title} loading='lazy' className="w-24 h-24 object-cover rounded" />
-            <div>
+            <img src={s.img} alt={s.title} loading='lazy' className="w-24 h-24 shrink-0 object-cover rounded" />
+            <div className="min-w-0">
               <h3 className="text-lg font-extrabold text-amber-900 font-serif">{s.title}</h3>
               <div className="text-sm font-semibold text-gray-800 dark:text-white font-sans">{s.price}</div>
               <p className="mt-2 text-sm text-gray-600 dark:text-gray-300 font-sans">{s.desc}</p>

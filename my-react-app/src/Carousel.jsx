@@ -38,6 +38,7 @@ const products = [
 
   const stopAutoSlide = () => {
     clearInterval(intervalRef.current)
+    
   }
 
   // Infinite logic

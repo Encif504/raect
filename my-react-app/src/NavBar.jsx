@@ -1,16 +1,22 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import logo from "./assets/logo.png"
 
 function NavBar() {
   const [open, setOpen] = useState(false);
+  const [isDark, setIsDark] = useState(() => localStorage.getItem('theme') === 'dark');
+
+  useEffect(() => {
+    document.documentElement.classList.toggle('dark', isDark);
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  }, [isDark]);
 
   return (
     <nav className="fixed top-0 w-full bg-amber-400 shadow z-50">
       <div className="max-w-screen mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
         <div className="flex items-center gap-3">
           <img src={logo} alt="logo" className="w-12 h-8 md:w-20 md:h-10 object-contain" loading="lazy" decoding="async" />
-          <h6 className="text-amber-800 font-bold ml-1">Grannada Enterprises</h6>
+          <h6 className="text-amber-800 font-bold ml-1 whitespace-nowrap">Grannada Enterprises</h6>
         </div>
 
         {/* Desktop Menu */}
@@ -22,14 +28,27 @@ function NavBar() {
           <Link to="projects" smooth={true} duration={500} className="hover:text-amber-800 cursor-pointer">Projects</Link>
         </div>
 
-        {/* Mobile Menu Button */}
-        <button
-          className="md:hidden text-2xl"
-          onClick={() => setOpen(!open)}
-          aria-label="Toggle menu"
-        >
-          ☰
-        </button>
+        <div className="flex items-center gap-2">
+          <button
+            type="button"
+            className="inline-flex h-8 min-w-8 items-center justify-center rounded-full border border-amber-800/40 bg-amber-300 px-1 text-base text-amber-950 transition hover:bg-amber-200"
+            onClick={() => setIsDark((current) => !current)}
+            aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
+            aria-pressed={isDark}
+            title={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
+          >
+            {isDark ? '☀' : '☾'}
+          </button>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden text-2xl"
+            onClick={() => setOpen(!open)}
+            aria-label="Toggle menu"
+          >
+            ☰
+          </button>
+        </div>
       </div>
 
       {/* Mobile Dropdown Menu */}
